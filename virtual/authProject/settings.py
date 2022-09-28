@@ -14,6 +14,8 @@ from pathlib import Path
 from datetime import timedelta
 
 
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -100,8 +102,12 @@ WSGI_APPLICATION = 'authProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3', 
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd275i9e6tmbk29',
+        'USER': 'hpwrffvjlqdcph',
+        'PASSWORD': '96d65da27e639352803362fe28c05c56b2b3ec98b34e8f98e9db70ea95dee371',
+        'HOST': 'ec2-34-225-159-178.compute-1.amazonaws.com',
+        'PORT': '5432',   
     }
 }
 
